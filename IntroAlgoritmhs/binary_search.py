@@ -17,3 +17,7 @@ my_list = [1,3,5,7,9]
 
 print(binary_search(my_list, 3))
 print(binary_search(my_list, 2))
+
+# Binary Search is a lot faster than simple search
+# Algorithm speed is not measured in second but in growth with Big O 
+# notation that give you the needed steps to run the alg!
