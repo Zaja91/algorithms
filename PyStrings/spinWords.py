@@ -39,3 +39,27 @@ def duplicate_count(text):
     return count
 
 print(duplicate_count("abcdeaa"))
+
+def fibonacci(n): # Fibonacci series up to n
+    """Print a Fib series up to n.""" # Doc string summary of what this function does
+    a, b = 0, 1
+    while a < n:
+        print(a, end= ' ')
+        a, b = b, a+b
+    print() # Insert a break line after the function runs
+
+fibonacci(100)
+print(fibonacci.__doc__) # Doc String print
+
+def fibonacci_list(n):
+    """Fib function with return value as list."""
+    a, b = 0, 1
+    fib_list = []
+    while a < n:
+        fib_list.append(a) # append is a method which is a function defined on list type
+                           # you can even define methods on obj with class definitions
+        a, b = b, a+b
+    return fib_list # Now the function returns a list that need to be used with print() to be seen
+
+print(fibonacci_list(100))
+print(fibonacci_list.__doc__)
